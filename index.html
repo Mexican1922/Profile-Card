@@ -3,61 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Card</title>
+    <title>Profile Card Task</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main data-testid="profile-card">
-      <article class="card" aria-label="Profile-card" data-testid="card">
-        <figure class="card_avatar" data-testid="avatar_figure">
-          <img
-            src="./images/Profile.png"
-            alt="Profile picture of Valentine Azolibe"
-            data-testid="avatar-image"
-            loading="lazy"
-          />
-        </figure>
-        <section class="card_info" data-testid="info-section">
-          <h1 class="card_name" data-testid="name">Valentine Azolibe</h1>
-          <h2 class="card_role" data-testid="role">Frontend Developer</h2>
-          <p class="card_bio" data-testid="bio">
-            Passionate about building accessible and user-friendly web
-            applications with modern technologies. When not coding or learning a
-            course, I like to watch animes, to cook (and eat), or just play
-            games.
-          </p>
-        </section>
-        <section
-          class="skills"
-          aria-label="My Stack"
-          data-testid="stack-section"
-        >
-          <ul class="skill_list" data-testid="stack">
-            <li aria-label="HTML and CSS" data-testid="first-skill">
-              HTML + CSS 💪
-            </li>
-            <li aria-label="JavaScript" data-testid="second-skill">
-              JavaScript 💪
-            </li>
-            <li aria-label="Web Design" data-testid="third-skill">
-              Web Design 💪
-            </li>
-            <li aria-label="Git and GitHub" data-testid="fourth-skill">
-              Git and GitHub 👍
-            </li>
-            <li aria-label="React" data-testid="fifth-skill">React 👶</li>
-          </ul>
-        </section>
-        <button
-          class="card_button"
-          type="button"
-          data-testid="follow-button"
-          aria-pressed="false"
-        >
-          Follow
-        </button>
-      </article>
-    </main>
+    <article
+      class="profile-card"
+      data-testid="test-profile-card"
+      aria-label="User Profile Card"
+    >
+      <!-- Avatar -->
+      <figure class="profile-avatar">
+        <img
+          src="./images/Profile.png"
+          alt="Profile picture of Valentine Azolibe"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <!-- User Info -->
+      <header class="profile-header">
+        <h2 data-testid="test-user-name">Valentine C. Azolibe</h2>
+        <p data-testid="test-user-bio">
+          Passionate Frontend Developer who enjoys creating beautiful,
+          accessible, and performant web experiences. I love to learn and share
+          knowledge with others.
+        </p>
+        <time
+          class="profile-time"
+          data-testid="test-user-time"
+          aria-label="Current time in milliseconds"
+        ></time>
+      </header>
+
+      <!-- Social Links -->
+      <nav class="profile-social" aria-label="Social Media Links">
+        <ul data-testid="test-user-social-links">
+          <li>
+            <a
+              href="https://twitter.com/Valenti78116865"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-twitter"
+            >
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/Mexican1922"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+            >
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/chibuzor-azolibe-45578b323"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin"
+            >
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Hobbies -->
+      <section class="profile-hobbies" aria-label="Hobbies">
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Coding</li>
+          <li>Watching anime</li>
+          <li>Exploring tech</li>
+          <li>Playing Games</li>
+        </ul>
+      </section>
+
+      <!-- Dislikes -->
+      <section class="profile-dislikes" aria-label="Dislikes">
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Slow Wi-Fi 😩</li>
+          <li>Bugs in code 🐞</li>
+          <li>Procrastination</li>
+        </ul>
+      </section>
+    </article>
 
     <script src="script.js"></script>
   </body>
