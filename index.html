@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main data-testid="profile-card">
+      <article class="card" aria-label="Profile-card" data-testid="card">
+        <figure class="card_avatar" data-testid="avatar_figure">
+          <img
+            src="./images/Profile.png"
+            alt="Profile picture of Valentine Azolibe"
+            data-testid="avatar-image"
+            loading="lazy"
+          />
+        </figure>
+        <section class="card_info" data-testid="info-section">
+          <h1 class="card_name" data-testid="name">Valentine Azolibe</h1>
+          <h2 class="card_role" data-testid="role">Frontend Developer</h2>
+          <p class="card_bio" data-testid="bio">
+            Passionate about building accessible and user-friendly web
+            applications with modern technologies. When not coding or learning a
+            course, I like to watch animes, to cook (and eat), or just play
+            games.
+          </p>
+        </section>
+        <section
+          class="skills"
+          aria-label="My Stack"
+          data-testid="stack-section"
+        >
+          <ul class="skill_list" data-testid="stack">
+            <li aria-label="HTML and CSS" data-testid="first-skill">
+              HTML + CSS 💪
+            </li>
+            <li aria-label="JavaScript" data-testid="second-skill">
+              JavaScript 💪
+            </li>
+            <li aria-label="Web Design" data-testid="third-skill">
+              Web Design 💪
+            </li>
+            <li aria-label="Git and GitHub" data-testid="fourth-skill">
+              Git and GitHub 👍
+            </li>
+            <li aria-label="React" data-testid="fifth-skill">React 👶</li>
+          </ul>
+        </section>
+        <button
+          class="card_button"
+          type="button"
+          data-testid="follow-button"
+          aria-pressed="false"
+        >
+          Follow
+        </button>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
