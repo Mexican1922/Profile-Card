@@ -51,3 +51,10 @@ The site includes multiple pages with smooth navigation and a clean, modern desi
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/Mexican1922/Profile-Card.git
+
+
+---
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
+
