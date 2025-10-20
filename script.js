@@ -7,5 +7,5 @@ function updateTime() {
 // Initial render
 updateTime();
 
-// Optional — update every second
+// Update every second
 setInterval(updateTime, 1000);

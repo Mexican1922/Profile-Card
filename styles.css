@@ -16,6 +16,57 @@ body {
   padding: 20px;
 }
 
+/* Navigation Bar Styling */
+.main-nav {
+  background-color: #222;
+  padding: 12px 0;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  background-color: #2662ea;
+  color: #fff;
+  outline: none;
+}
+
+.main-nav li {
+  display: inline-block;
+}
+
+/* Responsive nav adjustments */
+@media (max-width: 600px) {
+  .main-nav ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+  }
+
+  .main-nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+}
+
 .profile-card {
   background: #fff;
   max-width: 800px;
